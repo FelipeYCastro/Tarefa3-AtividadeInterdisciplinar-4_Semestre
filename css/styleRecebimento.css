@@ -11,12 +11,22 @@
   --font-input: 20px;
   --color-font: #fff;
   --font-response: 14px;
+  --font-h1: 40px;
+}
+.container {
+  /* display: flex; */
+  max-width: 95vw;
+  text-align: center;
 }
 
-.container {
+h1 {
+  /* display: block; */
+  margin: 20px auto;
+  font-size: var(--font-h1);
+}
+.dados-recebidos {
   display: flex;
-  max-width: 95vw;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 /* .left {
   max-width: 30%;

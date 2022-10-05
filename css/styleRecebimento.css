@@ -28,26 +28,33 @@ h1 {
   display: flex;
   justify-content: space-around;
 }
-/* .left {
-  max-width: 30%;
-} */
-.left img {
+.left {
+  text-align: center;
+  /* align-items: center */
+  margin: auto;
+}
+.right img {
   max-width: 550px;
   margin: 50px auto;
+  /* opacity: 0.5; */
+  /* z-index: -1; */
 }
-
-.right {
+/* 
+.left {
+  z-index: 1;
+} */
+/* .right {
   max-width: 500px;
   margin-top: 50px;
   padding: 20px;
   height: auto;
-  background-color: var(--bg-color-formulario);
-  text-align: center;
+  /* background-color: var(--bg-color-formulario); */
+/* text-align: center;
   /* margin-left: 20px; */
-  border-radius: 30px;
-}
+/* border-radius: 30px;
+} */
 
-.right label {
+/* .right label {
   display: block;
   padding: 20px;
   font-size: var(--font-input);
@@ -59,7 +66,7 @@ h1 {
   width: 100%;
   border-radius: 15px;
   font-size: var(--font-input);
-}
+} */
 
 #enviar:hover,
 #resetar:hover {
@@ -72,56 +79,53 @@ footer {
   margin-top: 50px;
   height: 50px;
   text-align: center;
+  line-height: 25px;
 }
 p .footer {
   margin: 20px;
   width: 100%;
   height: 50px;
 }
+em {
+  color: var(--bg-color-formulario);
+}
 
 @media (max-width: 1350px) {
-  .left img {
+  .right img {
     width: 600px;
   }
 }
 @media (max-width: 1200px) {
-  .container {
-    flex-direction: column;
+  .right img {
+    width: 400px;
   }
-  .left img {
-    width: 800px;
-  }
-  .right {
+  /* .left {
     order: -1;
     margin: 50px auto 10px auto;
-  }
+  } */
 }
 @media (max-width: 900px) {
-  .left img {
-    width: 550px;
+  .dados-recebidos {
+    flex-direction: column;
   }
-  .right {
+  .right img {
+    width: 500px;
+  }
+  .left {
     max-width: 400px;
-  }
-  .right h1 {
-    font-size: var(--font-input);
-  }
-  .right input,
-  .richr label {
-    font-size: var(--font-response);
   }
 }
 @media (max-width: 550px) {
-  .left img {
-    width: 390px;
+  .right img {
+    width: 350px;
   }
 }
 
 @media (max-width: 400px) {
-  .left img {
+  .right img {
     width: 290px;
   }
-  .right {
+  .left {
     width: 290px;
   }
   .footer {

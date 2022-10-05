@@ -1,9 +1,11 @@
+let form = document.querySelector("#formulario");
+let nome = document.querySelector("#nome");
+let senha = document.querySelector("#senha");
 let enviar = document.querySelector("#enviar");
+// console.log(enviar);
 
-enviar.addEventListener("click", function (e) {
-  // e.preventDefault(); //esse evento eu quero enviar
-  let name = document.querySelector("#name");
+// formulario.addEventListener("submit", function (e) {
+//   e.preventDefault();
 
-  let value = name.value;
-  console.log(value);
-});
+//   let valorNome = nome.value;
+// });

@@ -24,6 +24,18 @@ h1 {
   margin: 20px auto;
   font-size: var(--font-h1);
 }
+/* p {
+  font-size: var(--font-input);
+} */
+.left a {
+  font-size: var(--font-h1);
+  text-decoration: none;
+  color: inherit;
+}
+.left a:hover {
+  color: var(--bg-color-formulario);
+}
+
 .dados-recebidos {
   display: flex;
   justify-content: space-around;

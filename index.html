@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="import" href="recebe_informacao.html" />
     <title>Atividade Interdisciplinar - Tarefa 3</title>
   </head>
   <body>
@@ -15,16 +16,17 @@
 
       <div class="right">
         <h1>Formulário de Envio</h1>
-        <form action="recebe_informacao.html" method="post">
+        <form action="/recebe_informacao.html" id="formulario">
           <label for="name">
             Nome: <br />
 
             <input
               type="text"
               name="name"
-              id="name"
+              id="nome"
               placeholder="Digite o seu nome"
               autocomplete="off"
+              required
             />
           </label>
 

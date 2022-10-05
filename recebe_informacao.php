@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styleRecebimento.css" />
-    <link rel="imp" href="index.html">
     <title>Recebi informaçãoes</title>
   </head>
   <body>
@@ -14,11 +13,16 @@
       <section class="dados-recebidos">
         
         <div class="left">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Invel!</p>
+          <?php
+            $nome = $_POST['nome'];          
+          
+          echo "<h2 style='font-size:var(--font-h1);'> Seja bem vindo: </h2>".$nome."<br>";
+          ?>
+          <br>
           <a href="index.html"  title="Voltar para a página anterio" alt="voltar para a página anterior">&#10226; Voltar</a>
         </div>
         <div class="right">
-          <img src="/images/img1.png" alt="imagem do site" />
+          <img src="./images/img1.png" alt="imagem do site" />
         </div>
         
       </section>
@@ -31,13 +35,13 @@
           href="https://www.linkedin.com/in/felipe-y-castro-a0124522b/"
           target="_blank"
           ><img
-            src="/images/linkedIn.png"
+            src="./images/linkedIn.png"
             alt="Icone do LinkedIn"
             title="Meu LinkedIn"
         /></a>
         <a href="https://github.com/FelipeYCastro" target="_blank"
           ><img
-            src="/images/github.png"
+            src="./images/github.png"
             alt="Icone do github"
             title="Meu GitHub" /></a
         ><br />

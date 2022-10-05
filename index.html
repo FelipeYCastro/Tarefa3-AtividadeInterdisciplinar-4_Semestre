@@ -5,24 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="import" href="recebe_informacao.html" />
     <title>Atividade Interdisciplinar - Tarefa 3</title>
   </head>
   <body>
     <main class="container">
       <div class="left">
-        <img src="/images/img1.png" alt="imagem do site" />
+        <img src="./images/img1.png" alt="imagem do site" />
       </div>
 
       <div class="right">
         <h1>Formulário de Envio</h1>
-        <form action="/recebe_informacao.html" id="formulario">
-          <label for="name">
+        <form
+          action="recebe_informacao.php"
+          method="post"
+          id="formulario"
+          onsubmit="return cadastrar()"
+        >
+          <label for="nome">
             Nome: <br />
 
             <input
               type="text"
-              name="name"
+              name="nome"
               id="nome"
               placeholder="Digite o seu nome"
               autocomplete="off"
@@ -47,7 +51,6 @@
               id="enviar"
               value="Enviar"
               title="Enviar Infomações"
-              target="_blank"
             />
           </label>
           <label for="resetar">
@@ -69,13 +72,13 @@
           href="https://www.linkedin.com/in/felipe-y-castro-a0124522b/"
           target="_blank"
           ><img
-            src="/images/linkedIn.png"
+            src="./images/linkedIn.png"
             alt="Icone do LinkedIn"
             title="Meu LinkedIn"
         /></a>
         <a href="https://github.com/FelipeYCastro" target="_blank"
           ><img
-            src="/images/github.png"
+            src="./images/github.png"
             alt="Icone do github"
             title="Meu GitHub" /></a
         ><br />

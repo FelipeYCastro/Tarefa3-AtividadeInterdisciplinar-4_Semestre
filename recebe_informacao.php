@@ -9,20 +9,20 @@
   </head>
   <body>
     <main class="container">
-      <h1>Boas vindas</h1>
+      <h1>Boas-vindas</h1>
       <section class="dados-recebidos">
         
         <div class="left">
           <?php
             $nome = $_POST['nome'];          
           
-          echo "<h2 style='font-size:var(--font-h1);'> Seja bem vindo: </h2>".$nome."<br>";
+          echo "<h2 style='font-size:var(--font-h1);'> Seja bem-vindo: </h2>".$nome."<br>";
           ?>
           <br>
-          <a href="index.html"  title="Voltar para a página anterio" alt="voltar para a página anterior">&#10226; Voltar</a>
+          <a href="index.html"  title="Voltar para a página anterior" alt="voltar para a página anterior">&#10226; Voltar</a>
         </div>
         <div class="right">
-          <img src="./images/img1.png" alt="imagem do site" />
+          <img src="./images/img1.png" alt="imagem do site" title="imagem do site" />
         </div>
         
       </section>
@@ -45,7 +45,7 @@
             alt="Icone do github"
             title="Meu GitHub" /></a
         ><br />
-        Para apresentar a resolução da terefa 3 solicitada no atividade
+        Para apresentar a resolução da terefa 3 solicitada na atividade
         interdisciplinar do 4 semestre de Análise e Desenvolvimento de Sistemas.
       </p>
     </footer>
